@@ -1,0 +1,132 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".generated.cs" #>
+<#
+	var dict = new Dictionary<string, string>
+	{
+		["Switch_Now_Seconds"] = "SwitchUntilNowInSeconds",
+	};
+	var dict2 = new Dictionary<string, string>
+	{
+		["Now_Medium"] = "MediumNow",
+		["Now_Long"] = "LongNow",
+
+		["Seconds_Short"] = "ShortSeconds",
+		["Seconds_Medium"] = "MediumSeconds",
+		["Seconds_Medium_One"] = "MediumSecond",
+		["Seconds_Long"] = "LongSeconds",
+		["Seconds_Long_One"] = "LongSecond",
+
+		["Minutes_Seconds_Short"] = "ShortMinutesSeconds",
+		["Minutes_Seconds_Medium"] = "MediumMinutesSeconds",
+		["Minutes_Seconds_Medium_MOne"] = "MediumMinuteSeconds",
+		["Minutes_Seconds_Medium_SOne"] = "MediumMinutesSecond",
+		["Minutes_Seconds_Medium_MSOne"] = "MediumMinuteSecond",
+		["Minutes_Seconds_Long"] = "LongMinutesSeconds",
+		["Minutes_Seconds_Long_MOne"] = "LongMinuteSeconds",
+		["Minutes_Seconds_Long_SOne"] = "LongMinutesSecond",
+		["Minutes_Seconds_Long_MSOne"] = "LongMinuteSecond",
+
+		["Minutes_Short"] = "ShortMinutes",
+		["Minutes_Medium"] = "MediumMinutes",
+		["Minutes_Medium_One"] = "MediumMinute",
+		["Minutes_Long"] = "LongMinutes",
+		["Minutes_Long_One"] = "LongMinute",
+
+		["Hours_Minutes_Short"] = "ShortHoursMinutes",
+		["Hours_Minutes_Medium"] = "MediumHoursMinutes",
+		["Hours_Minutes_Medium_HOne"] = "MediumHourMinutes",
+		["Hours_Minutes_Medium_MOne"] = "MediumHoursMinute",
+		["Hours_Minutes_Medium_HMOne"] = "MediumHourMinute",
+		["Hours_Minutes_Long"] = "LongHoursMinutes",
+		["Hours_Minutes_Long_HOne"] = "LongHourMinutes",
+		["Hours_Minutes_Long_MOne"] = "LongHoursMinute",
+		["Hours_Minutes_Long_HMOne"] = "LongHourMinute",
+
+		["Hours_Short"] = "ShortHours",
+		["Hours_Medium"] = "MediumHours",
+		["Hours_Medium_One"] = "MediumHour",
+		["Hours_Long"] = "LongHours",
+		["Hours_Long_One"] = "LongHour",
+
+		["Days_Hours_Short"] = "ShortDaysHours",
+		["Days_Hours_Medium"] = "MediumDaysHours",
+		["Days_Hours_Medium_DOne"] = "MediumDayHours",
+		["Days_Hours_Medium_HOne"] = "MediumDaysHour",
+		["Days_Hours_Medium_DHOne"] = "MediumDayHour",
+		["Days_Hours_Long"] = "LongDaysHours",
+		["Days_Hours_Long_DOne"] = "LongDayHours",
+		["Days_Hours_Long_HOne"] = "LongDaysHour",
+		["Days_Hours_Long_DHOne"] = "LongDayHour",
+
+		["Days_Short"] = "ShortDays",
+		["Days_Medium"] = "MediumDays",
+		["Days_Medium_One"] = "MediumDay",
+		["Days_Long"] = "LongDays",
+		["Days_Long_One"] = "LongDay",
+
+		["Weeks_Short"] = "ShortWeeks",
+		["Weeks_Medium"] = "MediumWeeks",
+		["Weeks_Medium_One"] = "MediumWeek",
+		["Weeks_Long"] = "LongWeeks",
+		["Weeks_Long_One"] = "LongWeek",
+
+		["Months_Short"] = "ShortMonths",
+		["Months_Medium"] = "MediumMonths",
+		["Months_Medium_One"] = "MediumMonth",
+		["Months_Long"] = "LongMonths",
+		["Months_Long_One"] = "LongMonth",
+
+		["Years_Short"] = "ShortYears",
+		["Years_Medium"] = "MediumYears",
+		["Years_Medium_One"] = "MediumYear",
+		["Years_Long"] = "LongYears",
+		["Years_Long_One"] = "LongYear",
+
+		["Decades_Short"] = "ShortDecades",
+		["Decades_Medium"] = "MediumDecades",
+		["Decades_Medium_One"] = "MediumDecade",
+		["Decades_Long"] = "LongDecades",
+		["Decades_Long_One"] = "LongDecade",
+
+		["Centurys_Short"] = "ShortCenturys",
+		["Centurys_Medium"] = "MediumCenturys",
+		["Centurys_Medium_One"] = "MediumCentury",
+		["Centurys_Long"] = "LongCenturys",
+		["Centurys_Long_One"] = "LongCentury",
+	};
+#>
+namespace TimeAgo.Globalization
+{<# PushIndent("\t"); #>
+using System;
+partial class TimeAgoFormatInfo
+{<# PushIndent("\t"); #>
+<# foreach (var item in dict) { #>
+public int <#= item.Value #>
+{
+	get => _<#= item.Key #> ?? _timeAgoData.<#= item.Key #>;
+	set
+	{
+		if (IsReadOnly) throw new InvalidOperationException(INVALID_OPERATION_READONLY);
+		_<#= item.Key #> = value;
+	}
+}
+private int? _<#= item.Key #>;
+<# } #>
+<# foreach (var item in dict2) { #>
+public string <#= item.Value #>Pattern
+{
+	get => _<#= item.Key #> ?? _timeAgoData.<#= item.Key #>;
+	set
+	{
+		if (IsReadOnly) throw new InvalidOperationException(INVALID_OPERATION_READONLY);
+		_<#= item.Key #> = value ?? throw new ArgumentNullException(nameof(value));
+	}
+}
+private string _<#= item.Key #>;
+<# } #>
+<# PopIndent(); #>}
+<# PopIndent(); #>}

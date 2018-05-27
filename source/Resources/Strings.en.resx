@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Hours_Long" xml:space="preserve">
+    <value>{0} hours ago</value>
+  </data>
+  <data name="Hours_Short" xml:space="preserve">
+    <value>{0}h</value>
+  </data>
+  <data name="Minutes_Long" xml:space="preserve">
+    <value>{0} minutes ago</value>
+  </data>
+  <data name="Minutes_Short" xml:space="preserve">
+    <value>{0}m</value>
+  </data>
+  <data name="Now_Long" xml:space="preserve">
+    <value>Just now</value>
+  </data>
+  <data name="Now_Medium" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Seconds_Long" xml:space="preserve">
+    <value>{0} seconds ago</value>
+  </data>
+  <data name="Seconds_Short" xml:space="preserve">
+    <value>{0}s</value>
+  </data>
+  <data name="Seconds_Long_One" xml:space="preserve">
+    <value>A second ago</value>
+  </data>
+  <data name="Minutes_Long_One" xml:space="preserve">
+    <value>A minute ago</value>
+  </data>
+  <data name="Hours_Long_One" xml:space="preserve">
+    <value>An hour ago</value>
+  </data>
+  <data name="Days_Long" xml:space="preserve">
+    <value>{0} days ago</value>
+  </data>
+  <data name="Days_Short" xml:space="preserve">
+    <value>{0}d</value>
+  </data>
+  <data name="Minutes_Medium" xml:space="preserve">
+    <value>{0}mins</value>
+  </data>
+  <data name="Seconds_Medium" xml:space="preserve">
+    <value>{0}secs</value>
+  </data>
+  <data name="Hours_Medium" xml:space="preserve">
+    <value>{0}hrs</value>
+  </data>
+  <data name="Days_Medium" xml:space="preserve">
+    <value>{0}dys</value>
+  </data>
+  <data name="Weeks_Long" xml:space="preserve">
+    <value>{0} weeks ago</value>
+  </data>
+  <data name="Weeks_Medium" xml:space="preserve">
+    <value>{0}wks</value>
+  </data>
+  <data name="Weeks_Short" xml:space="preserve">
+    <value>{0}w</value>
+  </data>
+  <data name="Months_Long" xml:space="preserve">
+    <value>{0} months ago</value>
+  </data>
+  <data name="Months_Medium" xml:space="preserve">
+    <value>{0}mons</value>
+  </data>
+  <data name="Months_Short" xml:space="preserve">
+    <value>{0}mn</value>
+  </data>
+  <data name="Years_Long" xml:space="preserve">
+    <value>{0} years ago</value>
+  </data>
+  <data name="Years_Medium" xml:space="preserve">
+    <value>{0}yrs</value>
+  </data>
+  <data name="Years_Short" xml:space="preserve">
+    <value>{0}y</value>
+  </data>
+  <data name="Seconds_Medium_One" xml:space="preserve">
+    <value>1sec</value>
+  </data>
+  <data name="Hours_Medium_One" xml:space="preserve">
+    <value>1hr</value>
+  </data>
+  <data name="Minutes_Medium_One" xml:space="preserve">
+    <value>1min</value>
+  </data>
+  <data name="Days_Medium_One" xml:space="preserve">
+    <value>1dy</value>
+  </data>
+  <data name="Weeks_Medium_One" xml:space="preserve">
+    <value>1wk</value>
+  </data>
+  <data name="Weeks_Long_One" xml:space="preserve">
+    <value>A week ago</value>
+  </data>
+  <data name="Months_Long_One" xml:space="preserve">
+    <value>A month ago</value>
+  </data>
+  <data name="Months_Medium_One" xml:space="preserve">
+    <value>1mon</value>
+  </data>
+  <data name="Years_Long_One" xml:space="preserve">
+    <value>A year ago</value>
+  </data>
+  <data name="Years_Medium_One" xml:space="preserve">
+    <value>1yr</value>
+  </data>
+  <data name="Centurys_Short" xml:space="preserve">
+    <value>{0}c</value>
+  </data>
+  <data name="Centurys_Medium" xml:space="preserve">
+    <value>{0}cents</value>
+  </data>
+  <data name="Centurys_Medium_One" xml:space="preserve">
+    <value>1cent</value>
+  </data>
+  <data name="Centurys_Long" xml:space="preserve">
+    <value>{0} centurys ago</value>
+  </data>
+  <data name="Centurys_Long_One" xml:space="preserve">
+    <value>A century ago</value>
+  </data>
+  <data name="Decades_Long" xml:space="preserve">
+    <value>{0} decades ago</value>
+  </data>
+  <data name="Decades_Long_One" xml:space="preserve">
+    <value>A decade ago</value>
+  </data>
+  <data name="Decades_Medium" xml:space="preserve">
+    <value>{0}0yrs</value>
+  </data>
+  <data name="Decades_Medium_One" xml:space="preserve">
+    <value>10yrs</value>
+  </data>
+  <data name="Decades_Short" xml:space="preserve">
+    <value>{0}0y</value>
+  </data>
+  <data name="Minutes_Seconds_Medium" xml:space="preserve">
+    <value>{0}mins {1}secs</value>
+  </data>
+  <data name="Minutes_Seconds_Medium_MOne" xml:space="preserve">
+    <value>1min {0}secs</value>
+  </data>
+  <data name="Minutes_Seconds_Medium_MSOne" xml:space="preserve">
+    <value>1min 1sec</value>
+  </data>
+  <data name="Minutes_Seconds_Medium_SOne" xml:space="preserve">
+    <value>{0}mins 1sec</value>
+  </data>
+  <data name="Minutes_Seconds_Short" xml:space="preserve">
+    <value>{0}m {1}s</value>
+  </data>
+  <data name="Minutes_Seconds_Long" xml:space="preserve">
+    <value>{0} minutes and {1} seconds ago</value>
+  </data>
+  <data name="Minutes_Seconds_Long_MOne" xml:space="preserve">
+    <value>A minute and {0} seconds ago</value>
+  </data>
+  <data name="Minutes_Seconds_Long_SOne" xml:space="preserve">
+    <value>{0} minutes and a second ago</value>
+  </data>
+  <data name="Minutes_Seconds_Long_MSOne" xml:space="preserve">
+    <value>A minute and a second ago</value>
+  </data>
+  <data name="Hours_Minutes_Long" xml:space="preserve">
+    <value>{0} hours and {1} minutes ago</value>
+  </data>
+  <data name="Hours_Minutes_Long_HMOne" xml:space="preserve">
+    <value>An hour and a minute ago</value>
+  </data>
+  <data name="Hours_Minutes_Long_HOne" xml:space="preserve">
+    <value>An hour and {0} minutes ago</value>
+  </data>
+  <data name="Hours_Minutes_Long_MOne" xml:space="preserve">
+    <value>{0} hours and a minute ago</value>
+  </data>
+  <data name="Hours_Minutes_Medium" xml:space="preserve">
+    <value>{0}hrs {1}mins</value>
+  </data>
+  <data name="Hours_Minutes_Medium_HMOne" xml:space="preserve">
+    <value>1hr 1min</value>
+  </data>
+  <data name="Hours_Minutes_Medium_HOne" xml:space="preserve">
+    <value>1hr {0}mins</value>
+  </data>
+  <data name="Hours_Minutes_Medium_MOne" xml:space="preserve">
+    <value>{0}hrs 1min</value>
+  </data>
+  <data name="Hours_Minutes_Short" xml:space="preserve">
+    <value>{0}h {1}m</value>
+  </data>
+  <data name="Days_Hours_Long" xml:space="preserve">
+    <value>{0} days and {1} hours ago</value>
+  </data>
+  <data name="Days_Hours_Long_DHOne" xml:space="preserve">
+    <value>A day and an hour ago</value>
+  </data>
+  <data name="Days_Hours_Long_DOne" xml:space="preserve">
+    <value>A day and {0} hours ago</value>
+  </data>
+  <data name="Days_Hours_Long_HOne" xml:space="preserve">
+    <value>{0} days and an hour ago</value>
+  </data>
+  <data name="Days_Hours_Medium" xml:space="preserve">
+    <value>{0}dys {1}hrs</value>
+  </data>
+  <data name="Days_Hours_Medium_DHOne" xml:space="preserve">
+    <value>1dy 1hr</value>
+  </data>
+  <data name="Days_Hours_Medium_DOne" xml:space="preserve">
+    <value>1dy {0}hrs</value>
+  </data>
+  <data name="Days_Hours_Medium_HOne" xml:space="preserve">
+    <value>{0}dys 1hr</value>
+  </data>
+  <data name="Days_Hours_Short" xml:space="preserve">
+    <value>{0}d {1}h</value>
+  </data>
+  <data name="Days_Long_One" xml:space="preserve">
+    <value>A day ago</value>
+  </data>
+  <assembly alias="netstandard" name="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="Switch_Now_Seconds" type="System.Int32, netstandard">
+    <value>5</value>
+  </data>
+</root>

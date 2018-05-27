@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>TimeAgo</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <PackageId>TimeAgo</PackageId>
+    <AssemblyVersion>0.9.0.0</AssemblyVersion>
+    <FileVersion>0.9.0.0</FileVersion>
+    <Authors>Copyright (C) 2018 mntone</Authors>
+    <Product>TimeAgo.NET</Product>
+    <Copyright>Copyright (C) 2018 mntone</Copyright>
+    <PackageTags>TimeAgo</PackageTags>
+    <Description>The "time ago" API for .NET.</Description>
+    <Version>0.9.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="TimeAgoFormatInfo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TimeAgoFormatInfo.generated.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources/Strings.*.resx">
+      <LogicalName>TimeAgo.$([System.String]::Copy('%(Filename)').Replace('Strings.', '')).resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="TimeAgoFormatInfo.generated.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TimeAgoFormatInfo.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
